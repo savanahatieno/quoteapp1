@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent,
-    QuotesComponent
+    QuotesComponent,
+    QuotesFormComponent
   ],
   imports: [
     BrowserModule,
