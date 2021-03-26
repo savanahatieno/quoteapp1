@@ -1,1 +1,10 @@
-<p>quotes works!</p>
+<quotes-form (addQuote)="addNewQuote($event)"></quotes-form>
+<hr />
+<div class="container">
+  <div *ngFor="let quote of quotes" class="">
+    <ul>
+      <li>{{ quote.quote }}</li>
+      <p>{{ quote.author }}</p>
+    </ul>
+  </div>
+</div>
