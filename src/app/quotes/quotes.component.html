@@ -7,8 +7,9 @@
         Upvote <span>{{ quote.upVotes }}</span>
       </button>
       <button class="btn btn-primary" (click)="downVote(i)">
-        Downvote <span>{{ quote.upVotes }}</span>
+        Downvote <span>{{ quote.downVotes }}</span>
       </button>
+      <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
       <li>{{ quote.quote }}</li>
       <p>{{ quote.author }}</p>
     </ul>
