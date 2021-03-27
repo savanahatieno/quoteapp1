@@ -4,14 +4,16 @@
   <div *ngFor="let quote of quotes; let i = index" class="">
     <ul>
       <button class="btn btn-primary" (click)="upVote(i)">
-        Upvote <span>{{ quote.upVotes }}</span>
+        <i class="fa fa-thumbs-up"></i> <span>{{ quote.upVotes }}</span>
       </button>
       <button class="btn btn-primary" (click)="downVote(i)">
-        Downvote <span>{{ quote.downVotes }}</span>
+        <i class="fa fa-thumbs-down"></i> <span>{{ quote.downVotes }}</span>
       </button>
-      <button class="btn btn-danger" (click)="deleteQuote(i)">Delete</button>
+      <button class="btn btn-danger" (click)="deleteQuote(i)">
+        <i class="fa fa-trash"></i>
+      </button>
       <li>{{ quote.quote }}</li>
-      <p>{{ quote.author }}</p>
+      <!-- <p>{{ quote.author }}</p> -->
     </ul>
   </div>
 </div>

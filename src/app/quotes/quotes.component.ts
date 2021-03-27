@@ -9,14 +9,35 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
-      1,
-      'Rick Falkvinge',
-      'Bitcoin will do to banks what email did to the postal industry'
+      'Annah',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      new Date(2021, 1, 26)
+    ),
+    new Quote(
+      'Annah',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      new Date(2021, 1, 26)
+    ),
+    new Quote(
+      'Annah',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      new Date(2021, 1, 26)
+    ),
+    new Quote(
+      'Annah',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      new Date(2021, 1, 26)
+    ),
+    new Quote(
+      'Annah',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      new Date(2021, 1, 26)
     ),
   ];
   addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
+    // quote.id = quoteLength + 1;
+    quote.postDate = new Date(quote.postDate);
     this.quotes.unshift(quote);
   }
   upVote(index: number) {

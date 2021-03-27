@@ -1,4 +1,4 @@
-form {
+/* form {
   position: absolute;
   top: 50%;
   left: 30%;
@@ -25,9 +25,9 @@ form {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
-}
+} */
 
-.form-label {
+/*.form-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,4 +36,4 @@ form {
   color: #fff;
   pointer-events: none;
   transition: 0.5s;
-}
+}*/
