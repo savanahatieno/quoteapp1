@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.vote1 {
+  color: green;
+  margin-right: 10px;
+}
+
+.vote2 {
+  margin-right: 10px;
+}
+
+.trash{
+    color:red;
+}
