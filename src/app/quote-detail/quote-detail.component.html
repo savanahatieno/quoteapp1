@@ -1,1 +1,15 @@
-<p>quote-detail works!</p>
+<div class="card">
+  <p>
+    <strong>{{ quote.quote }}</strong>
+  </p>
+  <button class="btn" (click)="upVote(i)">
+    <i class="vote1 fa fa-thumbs-up"></i> {{ quote.upVotes }}
+  </button>
+  <button class="btn" (click)="downVote(i)">
+    <i class="vote2 fa fa-thumbs-down"></i>
+    {{ quote.downVotes }}
+  </button>
+  <button class="btn" (click)="deleteQuote(i)">
+    <i class="trash fa fa-trash"></i>
+  </button>
+</div>

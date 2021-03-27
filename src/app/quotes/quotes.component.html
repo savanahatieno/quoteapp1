@@ -1,19 +1,12 @@
 <quotes-form (addQuote)="addNewQuote($event)"></quotes-form>
 <hr />
 <div class="container">
-  <div *ngFor="let quote of quotes; let i = index" class="">
+    
     <ul>
-      <button class="btn" (click)="upVote(i)">
-        <i class="vote1 fa fa-thumbs-up"></i> <span>{{ quote.upVotes }}</span>
-      </button>
-      <button class="btn" (click)="downVote(i)">
-        <i class=" vote2 fa fa-thumbs-down"></i> <span>{{ quote.downVotes }}</span>
-      </button>
-      <button class="btn " (click)="deleteQuote(i)">
-        <i class=" trash fa fa-trash"></i>
-      </button>
-      <li>{{ quote.quote }}</li>
+      <div  *ngFor="let quote of quotes; let i = index" class=""></div>
+      <app-quote-detail>[quote]="quote"</app-quote-detail>
+
       <!-- <p>{{ quote.author }}</p> -->
     </ul>
-  </div>
+
 </div>
