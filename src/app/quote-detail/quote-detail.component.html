@@ -1,15 +1,16 @@
-<div class="card">
+<div class="row card">
   <p>
     <strong>{{ quote.quote }}</strong>
   </p>
-  <button class="btn" (click)="upVote(i)">
-    <i class="vote1 fa fa-thumbs-up"></i> {{ quote.upVotes }}
+  <button class="btn" (click)="voteUp()">
+    <i class="vote1 fa fa-thumbs-up"></i>
   </button>
-  <button class="btn" (click)="downVote(i)">
+  {{ upVote }}
+  <button class="btn" (click)="voteDown()">
     <i class="vote2 fa fa-thumbs-down"></i>
-    {{ quote.downVotes }}
   </button>
-  <button class="btn" (click)="deleteQuote(i)">
+  {{ downVote }}
+  <button class="btn" (click)="quoteDelete(true)">
     <i class="trash fa fa-trash"></i>
   </button>
 </div>

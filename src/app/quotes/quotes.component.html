@@ -1,12 +1,18 @@
 <quotes-form (addQuote)="addNewQuote($event)"></quotes-form>
 <hr />
 <div class="container">
-    
-    <ul>
-      <div  *ngFor="let quote of quotes; let i = index" class=""></div>
-      <app-quote-detail>[quote]="quote"</app-quote-detail>
-
-      <!-- <p>{{ quote.author }}</p> -->
-    </ul>
-
+  <ul>
+    <div *ngFor="let quote of quotes; let i = index">
+      <p id="post" style="color: black">
+        <em
+          >Posted by <strong>{{ quote.name }}</strong>
+        </em>
+      </p>
+      <app-quote-detail
+        [quote]="quote"
+        (isComplete)="deleteQuote($event, i)"
+      ></app-quote-detail>
+    </div>
+    <!-- <p>{{ quote.author }}</p> -->
+  </ul>
 </div>

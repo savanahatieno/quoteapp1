@@ -10,6 +10,11 @@
   margin-right: 10px;
 }
 
-.trash{
-    color:red;
+.trash {
+  color: red;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
 }
