@@ -1,9 +1,9 @@
 <quotes-form (addQuote)="addNewQuote($event)"></quotes-form>
 <hr />
 <div class="container">
-  <ul>
-    <div *ngFor="let quote of quotes; let i = index">
-      <p id="post" style="color: black">
+  <ul class="all-cards">
+    <div *ngFor="let quote of quotes; let i = index" class="card">
+      <!-- <p id="post" style="color: black">
         <em
           >Posted by <strong>{{ quote.name }}</strong>
         </em>
@@ -12,7 +12,15 @@
       <p id="date">
         on:
         <span id="datecolor">{{ quote.postDate | date: "medium" }}</span>
-      </p>
+      </p> -->
+
+      <span class="card-subtitle mb-2"
+        >Posted by: <span id="name">{{ quote.name }}</span
+        ><span id="date"
+          >on:
+          <span id="datecolor">{{ quote.postDate | date: "short" }}</span></span
+        ></span
+      >
       <app-quote-detail
         [quote]="quote"
         (isComplete)="deleteQuote($event, i)"

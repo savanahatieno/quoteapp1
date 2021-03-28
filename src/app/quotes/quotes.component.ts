@@ -34,6 +34,11 @@ export class QuotesComponent implements OnInit {
       new Date(2021, 1, 26)
     ),
   ];
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.postDate) - <any>new Date(a.postDate);
+    });
+  }  
   addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     // quote.id = quoteLength + 1;
