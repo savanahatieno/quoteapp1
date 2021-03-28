@@ -8,6 +8,10 @@
           >Posted by <strong>{{ quote.name }}</strong>
         </em>
       </p>
+
+      <p id="date">
+        on: <span id="datecolor">{{ quote.postDate | date: "short" }}</span>
+      </p>
       <app-quote-detail
         [quote]="quote"
         (isComplete)="deleteQuote($event, i)"
