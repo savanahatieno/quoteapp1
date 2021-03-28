@@ -10,7 +10,8 @@
       </p>
 
       <p id="date">
-        on: <span id="datecolor">{{ quote.postDate | date: "short" }}</span>
+        on:
+        <span id="datecolor">{{ quote.postDate | date: "medium" }}</span>
       </p>
       <app-quote-detail
         [quote]="quote"
