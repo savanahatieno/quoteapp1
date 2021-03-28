@@ -10,35 +10,35 @@ export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
+      'Nelson Mandela',
       new Date(2021, 1, 26)
     ),
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
+      'Nelson Mandela',
       new Date(2021, 1, 26)
     ),
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
+      'Nelson Mandela',
       new Date(2021, 1, 26)
     ),
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
+      'Nelson Mandela',
       new Date(2021, 1, 26)
     ),
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall." -Nelson Mandela',
+      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
+      'Nelson Mandela',
       new Date(2021, 1, 26)
     ),
   ];
-  get sortQuotes() {
-    return this.quotes.sort((a, b) => {
-      return <any>new Date(b.postDate) - <any>new Date(a.postDate);
-    });
-  }  
   addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     // quote.id = quoteLength + 1;

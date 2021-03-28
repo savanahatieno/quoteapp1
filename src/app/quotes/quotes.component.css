@@ -3,12 +3,18 @@ p {
 }
 
 .all-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: flexbox;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
-.card {
+/* .card {
   margin-bottom: 2%;
   background-color: aliceblue;
   box-shadow: 2px 2px 3px 2px black;
+} */
+
+#post {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
