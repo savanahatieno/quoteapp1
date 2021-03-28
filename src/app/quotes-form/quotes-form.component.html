@@ -1,43 +1,8 @@
-<form (ngSubmit)="submitQuote(); quoteForm.reset()" #quoteForm="ngForm">
-  <h2>Sign Up</h2>
-  <div class="form-group">
-    <label class="floatlabel form-label" for="author">Name</label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      name="author"
-      id="name"
-      name="name"
-      minlength="3"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="author">Quote Title</label>
-    <input
-      type="text"
-      class="form-control"
-      id="name"
-      name="author"
-      id="name"
-      name="name"
-      minlength="3"
-    />
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="quote">Quote</label>
-    <textarea
-      class="form-control"
-      name="quote"
-      [(ngModel)]="newQuote.quote"
-      #quote="ngModel"
-      id="quote"
-      cols="6"
-      rows="3"
-      required
-    ></textarea>
+<div class="container-fluid col-md-6" >
+  <form (ngSubmit)="submitQuote(); quoteForm.reset()" #quoteForm="ngForm">
+    <h2>Add Quote</h2>
     <div class="form-group">
-      <label class="form-label" for="author">Quote Author</label>
+      <label class="floatlabel form-label" for="author">Name</label>
       <input
         type="text"
         class="form-control"
@@ -48,12 +13,49 @@
         minlength="3"
       />
     </div>
-    <button
-      type="submit"
-      [disabled]="!quoteForm.form.valid"
-      class="btn btn-primary mt-3"
-    >
-      Submit
-    </button>
-  </div>
-</form>
+    <div class="form-group">
+      <label class="form-label" for="author">Quote Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="author"
+        id="name"
+        name="name"
+        minlength="3"
+      />
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="quote">Quote</label>
+      <textarea
+        class="form-control"
+        name="quote"
+        [(ngModel)]="newQuote.quote"
+        #quote="ngModel"
+        id="quote"
+        cols="6"
+        rows="3"
+        required
+      ></textarea>
+      <div class="form-group">
+        <label class="form-label" for="author">Quote Author</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="author"
+          id="name"
+          name="name"
+          minlength="3"
+        />
+      </div>
+      <button
+        type="submit"
+        [disabled]="!quoteForm.form.valid"
+        class="btn btn-primary mt-3"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
