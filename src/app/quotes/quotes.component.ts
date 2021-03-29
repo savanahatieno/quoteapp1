@@ -15,7 +15,7 @@ export class QuotesComponent implements OnInit {
       new Date(2021, 1, 26)
     ),
     new Quote(
-      'Ann Wangi',
+      'Ann Wangui',
       '"A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing."',
       'George Show',
       new Date(2020, 2, 26)
@@ -59,6 +59,7 @@ export class QuotesComponent implements OnInit {
       }
     }
   }
+
 
   constructor() {}
 
