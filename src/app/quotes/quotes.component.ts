@@ -9,34 +9,34 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
-      'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
-      'Nelson Mandela',
-      new Date(2021, 1, 26)
+      'Lucile Myers',
+      '"Life is too short to spend it at war with yourself."',
+      'Jake Pricely',
+      new Date(2021, 4, 26)
+    ),
+    new Quote(
+      'Ann Wangui',
+      '"If your working on something that your really care about, you dont have to be pushed."',
+      'Clement Ross',
+      new Date(2020, 10, 29)
     ),
     new Quote(
       'Annah',
       '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
       'Nelson Mandela',
-      new Date(2021, 1, 26)
+      new Date(2009, 4, 26)
     ),
     new Quote(
       'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
-      'Nelson Mandela',
-      new Date(2021, 1, 26)
+      '"You learn more from failure that from success."',
+      'Lesly Brook',
+      new Date(1958, 1, 2)
     ),
     new Quote(
-      'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
-      'Nelson Mandela',
-      new Date(2021, 1, 26)
-    ),
-    new Quote(
-      'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
-      'Nelson Mandela',
-      new Date(2021, 1, 26)
+      'John',
+      '"If life were predictable it would cease to be life, and be without flavor."',
+      'Raymond Reddington',
+      new Date(1941, 9, 09)
     ),
   ];
   addNewQuote(quote: Quote) {
