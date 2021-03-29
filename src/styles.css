@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
 .vote1 {
   color: green;
@@ -20,5 +21,9 @@
 }
 
 body {
-  background-color: rgb(130, 240, 240);
+  background-color:#49ff86; 
+  
+}
+h1{
+  font-family: 'Syne Mono', monospace;
 }
