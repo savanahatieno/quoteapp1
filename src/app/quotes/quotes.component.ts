@@ -10,33 +10,33 @@ export class QuotesComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
       'Lucile Myers',
-      '"Life is too short to spend it at war with yourself."',
+      '"Life is too short to spend it at war with yourself"',
       'Jake Pricely',
-      new Date(2021, 4, 26)
+      new Date(2021, 1, 26)
     ),
     new Quote(
       'Ann Wangui',
-      '"If your working on something that your really care about, you dont have to be pushed."',
-      'Clement Ross',
-      new Date(2020, 10, 29)
+      '"A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing."',
+      'George Benard Show',
+      new Date(2020, 2, 26)
     ),
     new Quote(
-      'Annah',
-      '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
-      'Nelson Mandela',
-      new Date(2009, 4, 26)
+      'Reddington',
+      '"If you are working on something that you really care about, you dont have to be pushed."',
+      'Paul',
+      new Date(2005, 9, 14)
     ),
     new Quote(
-      'Annah',
-      '"You learn more from failure that from success."',
-      'Lesly Brook',
-      new Date(1958, 1, 2)
+      'Raymond',
+      '"The way to get started is to quit talking and begin doing."',
+      'Keen',
+      new Date(2000, 5, 26)
     ),
     new Quote(
-      'John',
+      'Lucille',
       '"If life were predictable it would cease to be life, and be without flavor."',
-      'Raymond Reddington',
-      new Date(1941, 9, 09)
+      'Joseph',
+      new Date(1993, 2, 12)
     ),
   ];
   addNewQuote(quote: Quote) {
